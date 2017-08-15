@@ -29,6 +29,7 @@ StoreApp.controller('AppearlCtl',  function($http, $scope,$routeParams, $locatio
 } )
        .then(function(success){
         $scope.data=success.data
+        console.log(success.data)
     },  function(err) {
         alert('something went wrong')
     })
