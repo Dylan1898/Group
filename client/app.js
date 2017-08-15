@@ -56,5 +56,7 @@ StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParam
     $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/one' + id)
        .then(function(success){
         $scope.single=success.data.data
+    }, function(err){
+        alert('something went wrong')
     })
 });
