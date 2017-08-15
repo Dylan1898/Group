@@ -68,9 +68,15 @@ StoreApp.controller('MiscCtl',  function($http, $scope,$routeParams, $location){
 
 StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParams){
     var id = $routeParams.id
+<<<<<<< HEAD
     $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/one' + id, {
     headers: {'Filter':'f03b5f86-8143-11e7-8e40-12dbaf53d968'}
     })
+=======
+    $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/one/' + id, {
+    headers: {'Filter':'f03b5f86-8143-11e7-8e40-12dbaf53d968'}
+} )
+>>>>>>> 20095111fdd3cfa814e8e2bb8216e01085e8c5bd
        .then(function(success){
         $scope.single=success.data.data
     }, function(err){
