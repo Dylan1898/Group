@@ -28,8 +28,8 @@ StoreApp.controller('AppearlCtl',  function($http, $scope,$routeParams, $locatio
     headers: {'Filter':'f03b5f86-8143-11e7-8e40-12dbaf53d968'}
 } )
        .then(function(success){
-        $scope.data=success.data
-        console.log(success.data)
+        $scope.data=success.data.data
+        console.log(success.data.data)
     },  function(err) {
         alert('something went wrong')
     })
@@ -42,7 +42,7 @@ StoreApp.controller('MiscCtl',  function($http, $scope, $routeParams, $location)
         var id = $routeParams.id
         $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/misc')
         .then(function(success){
-         $scope.data=success.data
+         $scope.data=success.data.data
      },  function(err){
          alert('something went wrong')
      })
@@ -55,6 +55,6 @@ StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParam
     var id = $routeParams.id
     $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/one' + id)
        .then(function(success){
-        $scope.single=success.data
+        $scope.single=success.data.data
     })
 });
