@@ -1,6 +1,6 @@
-var app = angular.module("StoreApp", ['ngRoute'])
+var StoreApp = angular.module("StoreApp", ['ngRoute'])
 
-app.config(function($routeProvider){
+StoreApp.config(function($routeProvider){
     $routeProvider
     .when("/home", {
         templateUrl: "../views/home.html"
@@ -22,7 +22,7 @@ app.config(function($routeProvider){
     })
 });
 
-app.controller('AppearlCtl',  function($http, $scope, $location){
+StoreApp.controller('AppearlCtl',  function($http, $scope, $location){
     var id = $routeParams.id
     $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/appearl')
        .then(function(success){
@@ -35,7 +35,7 @@ app.controller('AppearlCtl',  function($http, $scope, $location){
     }
 });
 
-app.controller('MiscCtl',  function($http, $scope, $routeParams, $location){
+StoreApp.controller('MiscCtl',  function($http, $scope, $routeParams, $location){
         var id = $routeParams.id
         $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/misc')
         .then(function(success){
@@ -48,7 +48,7 @@ app.controller('MiscCtl',  function($http, $scope, $routeParams, $location){
      }
 });
 
-app.controller('SingleCtl',  function($http, $scope, $location, $routeParams){
+StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParams){
     var id = $routeParams.id
     $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/one' + id)
        .then(function(success){
