@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StoreApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="">COVALENCE  |</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a class="navbuttons" href="#/appearl"> APPEARL </a></li>
+                <li><a class="navbuttons" href="#/misc"> MISC </a></li>
+                <li><a class="navbuttons"> Cart </a></li>
+            </ul>
+        </div>
+    </nav>   
+
+    <div ng-view></div>
+
+    <script src='app.js'></script>
+</body>
+
+</html>
