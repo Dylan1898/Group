@@ -4,7 +4,7 @@
     <div class="banner"><img class="bannerImage" src="file:///Users/innovatebham_8/Desktop/Group/images/covalence-store-apparel-hero.jpg" alt="clothesrack"></div>
         <div ng-click="getId(product.id)" class="products" ng-repeat="appearl in data">
             <div>
-                <img class="productImage"  src="{{product.image}}" alt="Product">
+                <img class="productImage"  ng-src="{{appearl.image}}" alt="Product">
                 <h3>{{appearl.price}}</h3>
                 <h3>{{appearl.name}}</h3>
                 <button>ADD TO CART</button>

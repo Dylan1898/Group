@@ -2,8 +2,9 @@
 <div ng-controller="MiscCtl">
     <div ng-click="getId(product.id)" class="products" ng-repeat="misc in data">
         <div>
-            <img class="productImage"  src="{{misc.image}}" alt="Product">
-            <h3>{{misc.name}}</h3><h3>{{misc.price}}</h3>
+            <img class="productImage" ng-src="{{misc.image}}" alt="Product">
+            <h3>{{misc.price}}</h3>
+            <h3>{{misc.name}}</h3>
         </div>
     </div>
 </div>
