@@ -4,7 +4,7 @@
             <div class="productdiv" ng-click="getId(appearl.id)">
                 <img class="productImage"  ng-src="../images/{{appearl.image}}" alt="Product"> 
                 <h3 class="productName" >{{appearl.name}}</h3>
-                <h3 class="price" >{{appearl.price}}</h3>
+                <h3 class="price" >{{appearl.price| currency}}</h3>
             </div>
         </div>
         <div>
