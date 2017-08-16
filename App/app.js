@@ -21,6 +21,13 @@ StoreApp.config(function($routeProvider){
         templateUrl: "/App/views/single.html"
     })
 });
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+      }
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+      }
 
 StoreApp.controller('AppearlCtl',  function($http, $scope,$routeParams, $location){
     var id = $routeParams.id
@@ -52,19 +59,6 @@ StoreApp.controller('MiscCtl',  function($http, $scope,$routeParams, $location){
         $location.path('/one/' + id)
     }
 });
-
-// StoreApp.controller('MiscCtl',  function($http, $scope, $routeParams, $location){
-//         var id = $routeParams.id
-//         $http.get('http://iambham-store-dev.us-east-1.elasticbeanstalk.com/api/v1/products/misc')
-//         .then(function(success){
-//          $scope.data=success.data.data
-//      },  function(err){
-//          alert('something went wrong')
-//      })
-//      $scope.getId=function(id) {
-//          $location.path('/one/' + id)
-//      }
-// });
 
 StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParams){
     var id = $routeParams.id
