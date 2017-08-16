@@ -1,15 +1,15 @@
-<div class="banner"><img class="bannerImage" src="../images/covalence-store-apparel-hero.jpg" alt="clothesrack"></div>
+<div class="banner"><img class="bannerImage" src="/App/images/covalence-store-apparel-hero.jpg" alt="clothesrack"></div>
 <div ng-controller="AppearlCtl">
     <div class="col-sm-12 col-md-4 col-lg-3 productdiv" ng-repeat="appearl in data">
         <div ng-click="getId(appearl.id)">
-            <img class="productImage"  ng-src="/images/{{appearl.image}}" alt="Product"> 
-            <h3 class="productName" >{{appearl.name}}</h3>
-            <h3 class="price" >{{appearl.price| currency}}</h3>
+            <img class="productImage"  ng-src="./images/{{appearl.image}}" alt="Product"> 
+            <h4 class="productName" >{{appearl.name}}</h4>
+            <h4 class="price" >{{appearl.price| currency}}</h4>
         </div>
     </div>
-
-    <div>
-        <div class="copyright"><img class="footer" ng-src="https://covalence.io/wp-content/uploads/2017/05/covalence-logo.png" alt="Logo"></div>
-        <div>Copyright Covalence LLC</div>
-    </div>
 </div>
+
+<div>
+    <div class="copyright"><img class="footer" src="https://covalence.io/wp-content/uploads/2017/05/covalence-logo.png" alt="Logo"><h4>Copyright Covalence LLC</h4></div>
+</div>
+
