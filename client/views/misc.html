@@ -1,12 +1,13 @@
 <div class="banner"><img class="bannerImage" ng-src="../images/covalence-store-misc-hero.jpg" alt="clothesrack"></div>
 <div ng-controller="MiscCtl">
-    <div class="col-sm-12 col-md-4 col-lg-3" ng-repeat="misc in data">
-        <div ng-click="getId(misc.id)" class="products">
+    <div class="col-sm-12 col-md-4 col-lg-2" ng-repeat="misc in data">
+        <div ng-click="getId(misc.id)" class="productdiv">
             <img class="productImage"  ng-src="../images/{{misc.image}}" alt="Product">
             <h3 class="productName">{{misc.name}}</h3>
             <h3 class="price" >{{misc.price| currency}}</h3>
         </div>
     </div>
+    <div class="col-lg-1"></div>
 
     <div>
         <div><img class="footer" src="https://covalence.io/wp-content/uploads/2017/05/covalence-logo.png" alt="Logo"></div>
