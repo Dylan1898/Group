@@ -1,9 +1,10 @@
 <div class="banner"><img class="bannerImage" ng-src="../images/covalence-store-misc-hero.jpg" alt="clothesrack"></div>
 <div ng-controller="MiscCtl">
-    <div ng-click="getId(misc.id)" class="products" ng-repeat="misc in data">
-        <div>
+    <div class="col-sm-12 col-md-4 col-lg-3" ng-repeat="misc in data">
+        <div ng-click="getId(misc.id)" class="products">
             <img class="productImage"  ng-src="../images/{{misc.image}}" alt="Product">
-            <h3>{{misc.name}}</h3><h3>{{misc.price| currency}}</h3>
+            <h3 class="productName">{{misc.name}}</h3>
+            <h3 class="price" >{{misc.price| currency}}</h3>
         </div>
     </div>
 
