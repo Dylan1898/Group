@@ -2,7 +2,7 @@
 <div ng-controller="MiscCtl">
     <div class="col-sm-12 col-md-4 col-lg-3 productdiv" ng-repeat="misc in data">
         <div ng-click="getId(misc.id)">
-            <img class="productImage"  ng-src="../images/{{misc.image}}" alt="Product">
+            <img class="productImage"  ng-src="/images/{{misc.image}}" alt="Product">
             <h3 class="productName">{{misc.name}}</h3>
             <h3 class="price" >{{misc.price| currency}}</h3>
         </div>

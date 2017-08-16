@@ -3,22 +3,22 @@ var StoreApp = angular.module("StoreApp", ['ngRoute'])
 StoreApp.config(function($routeProvider){
     $routeProvider
     .when("/home", {
-        templateUrl: "./views/home.html"
+        templateUrl: "/App/views/home.html"
     })
     .when("/appearl", {
-        templateUrl: "./views/appearl.html"
+        templateUrl: "/App/views/appearl.html"
     })
     .when("/checkout", {
-        templateUrl: "./views/checkout.html"
+        templateUrl: "/App/views/checkout.html"
     })
     .when("/misc", {
-        templateUrl: "./views/misc.html"
+        templateUrl: "/App/views/misc.html"
     })
     .when("/invoice", {
-        templateUrl: "./views/invoice.html"
+        templateUrl: "/App/views/invoice.html"
     })
     .when("/one/:id", {
-        templateUrl: "./views/single.html"
+        templateUrl: "/App/views/single.html"
     })
 });
 
