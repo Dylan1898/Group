@@ -77,3 +77,6 @@ StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParam
         alert('something went wrong')
     })
 });
+
+// USE ANGULAR CURRENCY PIPE
+
