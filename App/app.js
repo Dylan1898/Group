@@ -58,6 +58,10 @@ StoreApp.controller('MiscCtl',  function($http, $scope,$routeParams, $location){
     $scope.getId=function(id){
         $location.path('/one/' + id)
     }
+    $scope.addtoCart=function(){
+        localStorage.setItem("ItemName", "this.name")
+        console.log(localStorage.getItem("ItemName"))
+    }
 });
 
 StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParams){

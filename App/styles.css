@@ -14,11 +14,30 @@
   width: 300px;
   text-align: center;
 }
+.productscontainer {
+  margin-left: 15em;
+}
 .singleproduct {
   width: 600px;
   height: 600px;
   margin-top: 7em;
   margin-left: 5em;
+}
+.singletext {
+  margin-top: 16em;
+  padding-left: 8em;
+  width: 56em;
+}
+.buttonsingle {
+  background-color: #47B6C7;
+  font-size: 1.8em;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  width: 10em;
+  font-variant: all-small-caps;
+  font-family: "Futura";
+  letter-spacing: 3px;
 }
 .productImage {
   width: 100%;
@@ -28,7 +47,7 @@
   background-color: #F4F4F4;
   width: 100%;
   display: inline-block;
-  margin-top: 6em;
+  margin-top: 8em;
   padding: 2em;
 }
 h4 {
@@ -40,18 +59,31 @@ h4 {
 .footer {
   -webkit-filter: brightness(0.15);
   filter: brightness(0.15);
+<<<<<<< HEAD
   opacity: 0.3;
   width: 30%;
   height: 30%;
+=======
+  opacity: 0.6;
+>>>>>>> c6bc2d9a884072742adf7575da31bd4a77f195ff
   float: left;
+  height: 3.55em;
+  width: auto;
 }
 .footertext {
   float: right;
+<<<<<<< HEAD
   margin-top: 1em;
   opacity: 0.3;
+=======
+  margin-top: 2em;
+  opacity: 0.6;
+  font-size: 1.4em;
+>>>>>>> c6bc2d9a884072742adf7575da31bd4a77f195ff
 }
 .header {
-  width: 25%;
+  height: 2.3em;
+  width: auto;
 }
 .navbar-inverse {
   opacity: 0.88;
@@ -60,6 +92,12 @@ h4 {
   color: #1597A9;
   width: 100%;
   z-index: 1;
+  height: 5em;
+  background-color: #071213;
+}
+.havbar-inverse.navbar-nav li.navbuttons {
+  font-size: 1.7em;
+  color: #47b6c7;
 }
 .navtext {
   color: #80828E;
