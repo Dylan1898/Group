@@ -17,6 +17,8 @@
 .copyright {
   background-color: #FFFAF0 ;
   width: 100%;
+  display: inline-block;
+  margin-top: 6em;
 }
 h4 {
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -36,8 +38,9 @@ h4 {
   opacity: 0.88;
   position: fixed;
   top: 0;
-  color: #0E535D;
+  color: #1597A9;
   width: 100%;
+  z-index: 1;
 }
 .navtext {
   color: #80828E;
