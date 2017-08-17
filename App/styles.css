@@ -4,6 +4,10 @@
   width: 100%;
   height: auto;
 }
+.homeimage {
+  height: 100%;
+  width: 100%;
+}
 .productdiv {
   display: inline-block;
   margin: 2%;
@@ -36,15 +40,15 @@ h4 {
 .footer {
   -webkit-filter: brightness(0.15);
   filter: brightness(0.15);
-  opacity: 0.6;
+  opacity: 0.3;
   width: 30%;
   height: 30%;
   float: left;
 }
-footer {
+.footertext {
   float: right;
-  margin-top: 2em;
-  opacity: 0.6;
+  margin-top: 1em;
+  opacity: 0.3;
 }
 .header {
   width: 25%;
