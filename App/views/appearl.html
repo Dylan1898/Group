@@ -1,6 +1,6 @@
 <div class="banner"><img class="bannerImage" src="/App/images/covalence-store-apparel-hero.jpg" alt="clothesrack"></div>
 <div ng-controller="AppearlCtl" class='productscontainer'>
-    <div class="col-sm-12 col-md-4 col-lg-3 productdiv" ng-repeat="appearl in data">
+    <div class="col-sm-12 col-lg-3 productdiv" ng-repeat="appearl in data">
         <div ng-click="getId(appearl.id)">
             <img class="productImage"  ng-src="App/images/{{appearl.image}}" alt="Product"> 
             <h4 class="productName" >{{appearl.name}}</h4>
