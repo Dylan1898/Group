@@ -71,6 +71,13 @@ StoreApp.controller('SingleCtl',  function($http, $scope, $location, $routeParam
         alert('something went wrong')
     })
 });
-
+StoreApp.filter('MakeMoney', function () {
+   return function (amount) {
+       console.log(amount)
+         var string= amount.toString()
+         console.log(string)
+       return string.slice(0,2)  
+   }
+});
 // USE ANGULAR CURRENCY PIPE
 
