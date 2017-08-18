@@ -43,9 +43,11 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >Close</a>
         <h4 class="navtext">Your Shopping Cart</h4>
         <hr>
-        <div ng-controller="CartCtl">  
-            <div ng-repreat="items in theCart">   
-        <h1></h1>
+        <div ng-controller="CartController">  
+            <div ng-repeat="items in theCart">   
+        <h1>{{items.name}}</h1>
+        <img src='App/images/{{items.image}}'></img>
+        <h3>{{items.price}}
         </div>
     </div>
         <h4 class="navtext">Total Price</h4><h4 class="navtext">$</h4>
