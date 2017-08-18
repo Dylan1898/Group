@@ -1,4 +1,4 @@
-//var cart = {};
+var cart = {};
 cart.products = [];
 
 localStorage.setItem('cart', JSON.stringify(cart));

@@ -1,10 +1,10 @@
 <div ng-controller="SingleCtl">
     <div class= "container-fluid">
         <div class= "row">
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12 singleproduct">
                 <img class="img-responsive" alt="Product image" ng-src="App/images/{{single.image}}" alt="Product">
             </div>
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-5 col-sm-12 singletext">
                 <h2 class="price">${{single.price| MakeMoney}}.00</h2>
                 <h2>{{single.name}}</h2>
                 <p>{{single.description}}</p>
@@ -27,4 +27,8 @@
                 <button class='buttonsingle' ng-click="addProduct()">Add to Cart</button>
             </div>
         </div>
+    </div>
+
+    <div>
+        <div class="copyright"><img class= "footer"src="/App/images/Newlogo.png" alt="COVALENCE"><h4 class="footertext">Copyright Covalence LLC</h4></div>
     </div>
