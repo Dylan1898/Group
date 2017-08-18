@@ -1,35 +1,30 @@
 <div ng-controller="SingleCtl">
-    <div>
-        <div class="col-lg-6 singleproduct">
-            <img class="productImage" ng-src="App/images/{{single.image}}" alt="Product">
-        </div>
-        <div class=" col-lg-6 singletext">
-            <h3 class="price">${{single.price| MakeMoney}}.00</h3>
-            <h3>{{single.name}}</h3>
-            <p>{{single.description}}</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et justo non facilisis. Sed
-                blandit ipsum sit amet dolor pretium tempor. Mauris semper lacus turpis, sed mollis felis consequat id. Aliquam
-                ligula leo, aliquet vel risus sed, feugiat blandit nibh. Duis quis turpis magna. Duis a arcu et magna pretium
-                cursus vel non augue. Nullam ultrices viverra purus viverra mattis. </p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>Ut varius mauris non pulvinar luctus.
-                </li>
-                <li>Donec sollicitudin lorem id leo varius egestas.
-                </li>
-                <li>Cras sit amet ante fringilla, ultrices augue id, lacinia justo.
-                </li>
-                <li>Phasellus ac ex feugiat, congue risus bibendum, rhoncus neque.
-                </li>
-            </ul>
-            <button ng-click="addtoCart()" class='buttonsingle'>Add to Cart</button>
+    <div class= "container-fluid">
+        <div class= "row">
+            <div class="col-lg-6 col-sm-12">
+                <img class="img-responsive" alt="Product image" ng-src="App/images/{{single.image}}" alt="Product">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h2 class="price">${{single.price| MakeMoney}}.00</h2>
+                <h2>{{single.name}}</h2>
+                <p>{{single.description}}</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et justo non facilisis. Sed
+                    blandit ipsum sit amet dolor pretium tempor. Mauris semper lacus turpis, sed mollis felis consequat id. Aliquam
+                    ligula leo, aliquet vel risus sed, feugiat blandit nibh. Duis quis turpis magna. Duis a arcu et magna pretium
+                    cursus vel non augue. Nullam ultrices viverra purus viverra mattis. </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>Ut varius mauris non pulvinar luctus.
+                    </li>
+                    <li>Donec sollicitudin lorem id leo varius egestas.
+                    </li>
+                    <li>Cras sit amet ante fringilla, ultrices augue id, lacinia justo.
+                    </li>
+                    <li>Phasellus ac ex feugiat, congue risus bibendum, rhoncus neque.
+                    </li>
+                </ul>
+                <button class='buttonsingle'>Add to Cart</button>
+            </div>
         </div>
     </div>
-</div>
-<div>
-    <div class="copyright"><img class="footer" src="https://covalence.io/wp-content/uploads/2017/05/covalence-logo.png" alt="Logo">
-        <h4 class="footertext">Copyright Covalence LLC</h4>
-    </div>
-
-    </div
