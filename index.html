@@ -34,6 +34,7 @@
                 </ul>
                 <ul class= "nav navbar-nav navbar-right">
                     <li><a class="navbuttons" onclick="openNav()"> Cart </a></li>
+                    <li><a onclick="openNav()"> {{theCart.length}}</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,7 @@
         <h4 class="navtext">Your Shopping Cart</h4>
         <hr>
         <div ng-controller="CartController">  
-            <div ng-repeat="items in theCart">   
+            <div ng-repeat="items in theCart track by $index">   
         <h1>{{items.name}}</h1>
         <img src='App/images/{{items.image}}'></img>
         <h3>{{items.price}}
