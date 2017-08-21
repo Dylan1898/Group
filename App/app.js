@@ -106,9 +106,7 @@ StoreApp.controller('SingleCtl', function ($http, $scope, $rootScope, $location,
         localStorage.setItem('cart', JSON.stringify(cart));
         $rootScope.theCart.push(product);
         var y = document.getElementById("Total").innerHTML= (getTotal())
-        
     }
-    
 });
 
 StoreApp.filter('MakeMoney', function () {
@@ -128,8 +126,6 @@ StoreApp.controller('CartController', function ($http, $rootScope, $routeParams,
 //     console.log(cart)
 
 //    }
-   
-   
 });
 
 function getTotal() {
