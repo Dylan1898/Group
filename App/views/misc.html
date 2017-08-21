@@ -1,14 +1,16 @@
-<div class="banner"><img class="bannerImage" src="/App/images/covalence-store-misc-hero.jpg" alt="clothesrack"></div>
-<div ng-controller="MiscCtl" class='productscontainer'>
-    <div class="col-xs-8 col-md-4 col-lg-3 productdiv" ng-repeat="misc in data">
-        <div ng-click="getId(misc.id)">
-            <img class="productImage"  ng-src="App/images/{{misc.image}}" alt="Product">
-            <h4 class="productName">{{misc.name}}</h4>
-            <h4 class="price" >${{misc.price| MakeMoney}}.00</h4>
+<div class= "Products">
+    <div class="banner"><img class="bannerImage" src="/App/images/covalence-store-misc-hero.jpg" alt="clothesrack"></div>
+    <div ng-controller="MiscCtl" class='productscontainer'>
+        <div class="col-xs-8 col-md-4 col-lg-3 productdiv" ng-repeat="misc in data">
+            <div ng-click="getId(misc.id)">
+                <img class="productImage"  ng-src="App/images/{{misc.image}}" alt="Product">
+                <h4 class="productName">{{misc.name}}</h4>
+                <h4 class="price" >${{misc.price| MakeMoney}}.00</h4>
+            </div>
         </div>
     </div>
-</div>
 
-<div>
-    <div class="copyright"><img class= "footer"src="/App/images/Newlogo.png" alt="COVALENCE"><h4 class="footertext" >Copyright Covalence LLC</h4></div>
+    <div>
+        <div class="copyright"><img class= "footer"src="/App/images/Newlogo.png" alt="COVALENCE"><h4 class="footertext" >Copyright Covalence LLC</h4></div>
+    </div>
 </div>
