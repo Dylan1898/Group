@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./App/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.js"></script>
@@ -17,47 +17,50 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <div class='Index'>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#/home"><img class="header" src="/App/images/Newlogo.png" alt="COVALENCE"></a>
+                    <a class="navbar-brand" href="#/home"><img class="header" src="/App/images/Newlogo.png" alt="COVALENCE"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a class="navbuttons" href="#/appearl"> APPEARL </a></li>
+                        <li><a class="navbuttons" href="#/misc"> MISC </a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="navbuttons" onclick="openNav()"> Cart </a></li>
+                        <li><a onclick="openNav()"> {{theCart.length}}</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class= "nav navbar-nav">
-                    <li><a class="navbuttons" href="#/appearl"> APPEARL </a></li>
-                    <li><a class="navbuttons" href="#/misc"> MISC </a></li>
-                </ul>
-                <ul class= "nav navbar-nav navbar-right">
-                    <li><a class="navbuttons" onclick="openNav()"> Cart </a></li>
-                    <li><a onclick="openNav()"> {{theCart.length}}</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>   
-    
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >Close</a>
-        <h4 class="navtext">Your Shopping Cart</h4>
-        <hr>
-        <div ng-controller="CartController">  
-            <div ng-repeat="items in theCart track by $index">   
-        <h1>{{items.name}}</h1>
-        <img src='App/images/{{items.image}}'></img>
-        <h3>{{items.price}}
-        </div>
-    </div>
-        <h4 class="navtext">Total Price</h4><h4 class="navtext">$</h4>
-        <p class="navtext2">Taxes and Fees included at Checkout</p>
-        <button href="#/invoice" class="checkoutbtn">Check Out</button>
-    </div>
-    <div ng-view></div>
+        </nav>
 
-    <script src='/App/app.js'></script>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+            <h4 class="navtext">Your Shopping Cart</h4>
+            <hr>
+            <div ng-controller="CartController">
+                <div ng-repeat="items in theCart track by $index">
+                    <h1>{{items.name}}</h1>
+                    <img src='App/images/{{items.image}}'></img>
+                    <h3>${{items.price| MakeMoney}}.00</h3>
+                </div>
+            </div>
+            <h4 class="navtext">Total Price</h4>
+            <h4 class="navtext">$</h4>
+            <p class="navtext2">Taxes and Fees included at Checkout</p>
+            <button href="#/invoice" class="checkoutbtn">Check Out</button>
+        </div>
+        <div ng-view></div>
+
+        <script src='/App/app.js'></script>
+    </div>
 </body>
 
 </html>

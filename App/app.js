@@ -93,6 +93,7 @@ addToCart(product);
 
 function addToCart(product) {
 var cart = JSON.parse(localStorage.getItem('cart'));
+console.log(cart)
 cart.push(product);
 localStorage.setItem('cart', JSON.stringify(cart));
 $rootScope.theCart.push(product);
@@ -100,11 +101,9 @@ $rootScope.theCart.push(product);
 
 });
 StoreApp.filter('MakeMoney', function () {
-return function (amount) {
-console.log(amount)
-var string = amount.toString()
-console.log(string)
-return string.slice(0, 2)
+return function (ammount) {
+var string = ammount.toString()
+return string.slice(0, -2)
 }
 });
 
@@ -114,3 +113,12 @@ StoreApp.controller('CartController', function ($http, $rootScope, $routeParams,
 // console.log(carts.products)
 });
 
+function getTotal( ){
+    var cart = JSON.parse(localStorage.getItem('cart'))
+    var sum = 0
+    for (i=0; i < cart.length; i++){
+       sum = sum + cart[i].price
+       console.log(sum)
+    }
+    // console.log(sum)
+}
