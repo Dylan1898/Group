@@ -1,45 +1,56 @@
 .Index {
-  .homeimage {
-    height: 80%;
-    width: 100%;
+  footer {
+  -webkit-filter: brightness(0.15);
+  filter: brightness(0.15);
+  opacity: 0.3;
+  width: 30%;
+  height: 30%;
+  float: left;
+  height: 3.55em;
+  width: auto;
   }
-  .mug {
-    width: 100%;
-    height: 100%;
-    margin-top: -15em;
+  .footertext {
+  float: right;
+  margin-top: 2em;
+  opacity: 0.6;
+  font-size: 1.4em;
   }
-  h4 {
-    font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  .header {
+  height: 2.3em;
+  width: auto;
   }
-  .start-shopping {
-    z-index: 2;
-    width: 300px;
-    height: 150;
+  .navbar-inverse {
+  opacity: 0.66;
+  height: 5em;
   }
-  .Welcome {
-    left: 15%;
-    bottom: 40%;
-    width: 50%;
-    position: sticky;
-  }
-  .Welcome .Welcome .billboard {
-    color: whitesmoke;
-    Font-family: "Futura";
-    width: 50%;
-    font-size: 30px;
-  }
-  .Welcome .Welcome .start-shopping {
-    width: 50%;
-    background-color: #47B6C7;
-    border: none;
-    border-radius: 0.125em;
-    color: white;
-    font-family: futura;
-    font-size: 20px;
-    padding: 19px;
-  }
-  #main {
-    transition: margin-left 0.5s;
-    padding: 20px;
+
+  .sidenav {
+  float: right;
+  height: 93%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+      .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      }
+
+      .sidenav .closebtn {
+      background-color: #47B6C7;
+      position: absolute;
+      top: 0;
+      font-size: 16px;
+      width: 100%;
+      }
   }
 }
