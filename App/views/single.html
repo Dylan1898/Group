@@ -1,5 +1,5 @@
 <div class="Single" ng-controller="SingleCtl">
-    <div class= "container-fluid">
+    <div class= "container-fluid" ng-if="!!single">
         <div class= "row">
             <div class="col-lg-6 col-sm-12 singleproduct">
                 <img class="img-responsive" alt="Product image" ng-src="App/images/{{single.image}}" alt="Product">
@@ -24,7 +24,7 @@
                     <li>Phasellus ac ex feugiat, congue risus bibendum, rhoncus neque.
                     </li>
                 </ul>
-                <button class='buttonsingle' ng-click="addProduct()">Add to Cart</button>
+                <button class='buttonsingle' ng-click="getTotal(); addProduct()">Add to Cart</button>
             </div>
         </div>
     </div>
