@@ -1,22 +1,30 @@
-<div class="address-div">
-        <div class="circle2">2</div>
-        <p class="your-address">Your Billing Address</p>
-        <p class="address-name">Name</p>
-		<div class = "address-inputDiv">
-        <input class="address-first" value="" placeholder="First"></input>
-        <input class="address-last" value="" placeholder="Last"></input>
-        <br>
-        <input class="address-company" value="" placeholder="Company (optional)"></input>
-        <input class="address-phone" value="" placeholder="Phone"></input>
-        <br>
+<div class="invoice-container">
+	<div class="email-div">
+		<div class="circle1">1</div>
+		<p class="your-email">Your Email</p>
+		<div class="address-inputDiv">
+			<input class="email-input" value="" placeholder="you@email.com"></input>
 		</div>
-        <p class="addressTxt">Address</p>
-		<div class = "address-inputDiv">
-        <input class="address-1" value="" placeholder="Address 1"></input>
-        <input class="address-2" value="" placeholder="Address 2 (optional)"></input>
-        <br>
-        <input class="address-city" value="" placeholder="City"></input>
-        <select class= "state-selector">
+	</div>
+	<div class="address-div">
+		<div class="circle2">2</div>
+		<p class="your-address">Your Billing Address</p>
+		<p class="address-name">Name</p>
+		<div class="address-inputDiv">
+			<input class="address-first" value="" placeholder="First"></input>
+			<input class="address-last" value="" placeholder="Last"></input>
+			<br>
+			<input class="address-company" value="" placeholder="Company (optional)"></input>
+			<input class="address-phone" value="" placeholder="Phone"></input>
+			<br>
+		</div>
+		<p class="addressTxt">Address</p>
+		<div class="address-inputDiv">
+			<input class="address-1" value="" placeholder="Address 1"></input>
+			<input class="address-2" value="" placeholder="Address 2 (optional)"></input>
+			<br>
+			<input class="address-city" value="" placeholder="City"></input>
+			<select class="state-selector">
         <option value="state">State</option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
@@ -70,9 +78,9 @@
         <option value="WI">Wisconsin</option>
         <option value="WY">Wyoming</option>
 </select>
-<br>
-        <input class="address-zipcode" value="" placeholder="Zip Code"></input>
-    <select class = "country-selector">
+			<br>
+			<input class="address-zipcode" value="" placeholder="Zip Code"></input>
+			<select class="country-selector">
     <option value="Country">Country</option>
 	<option value="US">United States</option>
 	<option value="AF">Afghanistan</option>
@@ -324,59 +332,63 @@
 	<option value="ZM">Zambia</option>
 	<option value="ZW">Zimbabwe</option>
 </select>
-	</div>
-        <div class="payment-div">
-            <div class="circle3">3</div>
-            <p class="payment-method">Payment Method</p>
-			<div class = "address-inputDiv">
-			<input type="checkbox" name="card" value="card">
-			<img class="card-picture1" ng-src="./App/images/visa.png">
-			<img class="card-picture2" ng-src="./App/images/discover.png">
-			<img class="card-picture3" ng-src="./App/images/mastercard.png">
-			<img class="card-picture5" ng-src="./App/images/american-express.png"><br>
-            <input class="card-number" value="" placeholder="Card #"></input>
-			<br>
-            <select class="month-selector">
-                <option value="Month">Month</option>
-                <option value="January">January</option>
-                <option value="Feburary">Feburary</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="December">December</option>
-            </select>
-            <select class="year-selector">
-                <option value="Year">Year</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-            </select>
-            <p class="experation">Experation</p>
-            <input class="CSC" value="" placeholder="CSC"></input>
-        <br>
-        <div class="paypal-div">
-            <input type="checkbox" name="card" value="card"><img class="card-picture1" ng-src="/images/paypal.png">
-        </div>
-        </div>
 		</div>
-        <div class="footer">
-            <p class="footer-text">Almost done! Click the submit button to process your payment.</p>
-            <button class="submit-button">Submit Your Order</button>
-        </div>
-    </div>
+		<div class="payment-div">
+			<div class="circle3">3</div>
+			<p class="payment-method">Payment Method</p>
+			<div class="payment-methodDiv">
+				<div class="address-inputDiv1">
+					<div class="experationDiv">
+						<input type="checkbox" name="card" value="card">
+						<img class="card-picture1" ng-src="./App/images/visa.png">
+						<img class="card-picture2" ng-src="./App/images/discover.png">
+						<img class="card-picture3" ng-src="./App/images/mastercard.png">
+						<img class="card-picture5" ng-src="./App/images/american-express.png"><br>
+					</div>
+					<input class="card-number" value="" placeholder="Card #"></input>
+					<br>
+					<select class="month-selector">
+                	<option value="Month">Month</option>
+                	<option value="January">January</option>
+                	<option value="Feburary">Feburary</option>
+                	<option value="March">March</option>
+                	<option value="April">April</option>
+                	<option value="May">May</option>
+                	<option value="June">June</option>
+                	<option value="July">July</option>
+                	<option value="August">August</option>
+                	<option value="September">September</option>
+                	<option value="October">October</option>
+                	<option value="November">November</option>
+                	<option value="December">December</option>
+        			</select>
+					<select class="year-selector">
+                	<option value="Year">Year</option>
+                	<option value="2017">2017</option>
+                	<option value="2018">2018</option>
+                	<option value="2019">2019</option>
+                	<option value="2020">2020</option>
+                	<option value="2021">2021</option>
+                	<option value="2022">2022</option>
+                	<option value="2023">2023</option>
+                	<option value="2024">2024</option>
+                	<option value="2025">2025</option>
+                	<option value="2026">2026</option>
+                	<option value="2027">2027</option>
+                	<option value="2028">2028</option>
+            		</select>
+					<p class="experation">Experation</p>
+					<input class="CSC" value="" placeholder="CSC"></input>
+					<br>
+					<div class="paypal-div">
+						<input type="checkbox" name="card" value="card"><img class="card-picture1" ng-src="/images/paypal.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p class="footer-text">Almost done! Click the submit button to process your payment.</p>
+			<button class="submit-button">Submit Your Order</button>
+		</div>
+	</div>
 </div>
