@@ -1,5 +1,18 @@
 <div class="Checkout">
-	<div class="invoice-container">
+	<div class="col-xs-12 col-md-4 reviewcart">
+		<h2 class="reviewtitle" >Your Shopping Cart</h2>
+		<button class="reviewbutton">|Cancel and continue shopping|</button>
+		<div ng-repeat="">
+			<img class=reviewimage src="" alt="product">
+			<h4>{{product.name}}</h4>
+			<h4>{{product.price}}</h4>
+			<button class="reviewbutton">remove</button>
+		</div>
+		<h2 class="reviewtitle">Order Summary</h2>
+		<input class="reviewcode" placeholder="Discount Code" type="text"><button>apply</button>
+		<h4>Order Total: {{total}}</h4>
+	</div>
+	<div class="col-xs-12 col-md-8 invoice-container">
 		<div class="email-div">
 			<div class="circle1">1</div>
 			<p class="your-email">Your Email</p>
@@ -341,10 +354,10 @@
 					<div class="address-inputDiv1">
 						<div class="experationDiv">
 							<input type="checkbox" name="card" value="card">
-							<img class="card-picture1" ng-src="./App/images/visa.png">
-							<img class="card-picture2" ng-src="./App/images/discover.png">
-							<img class="card-picture3" ng-src="./App/images/mastercard.png">
-							<img class="card-picture5" ng-src="./App/images/american-express.png"><br>
+							<img class="card-picture" ng-src="./App/images/visa.png">
+							<img class="card-picture" ng-src="./App/images/discover.png">
+							<img class="card-picture" ng-src="./App/images/mastercard.png">
+							<img class="card-picture" ng-src="./App/images/american-express.png"><br>
 						</div>
 						<input class="card-number" value="" placeholder="Card #"></input>
 						<br>
@@ -382,7 +395,7 @@
 						<input class="CSC" value="" placeholder="CSC"></input>
 						<br>
 						<div class="paypal-div">
-							<input type="checkbox" name="card" value="card"><img class="card-picture1" ng-src="/images/paypal.png">
+							<input type="checkbox" name="card" value="card"><img class="card-picture" ng-src="/App/images/paypal.png">
 						</div>
 					</div>
 				</div>
@@ -392,5 +405,8 @@
 				<button class="submit-button">Submit Your Order</button>
 			</div>
 		</div>
+	</div>
+	<div>
+		<div class="copyright"><img class= "footer"src="/App/images/Newlogo.png" alt="COVALENCE"><h4 class="footertext" >Copyright Covalence LLC</h4></div>
 	</div>
 </div>

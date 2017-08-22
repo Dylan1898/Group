@@ -162,10 +162,25 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
+.Checkout .reviewcart {
+  height: 45.25em;
+  background-color: #e0e0e0;
+  font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Checkout .reviewbutton {
+  background-color: white;
+  color: red;
+  border-radius: 0.25em;
+  padding: 1em;
+}
+.Checkout .reviewimage {
+  height: 100px;
+  width: 100px;
+}
 .Checkout .invoice-container {
-  padding-left: 6em;
+  padding-left: 2em;
   border: black solid 2px;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   padding-top: 2em;
   overflow: scroll;
 }
@@ -186,12 +201,13 @@
 }
 .Checkout .email-input {
   width: 31.9em;
-  /*margin-left: 5.313em;*/
+  /* margin-left: 5.313em; */
   height: 2.063em;
   background-color: gainsboro;
   font-size: 0.813em;
   border-width: 0em;
   border: none;
+  margin-bottom: 1em;
 }
 .Checkout .circle2 {
   background: #47B6C7;
@@ -210,8 +226,7 @@
 }
 .Checkout .address-name {
   float: left;
-  margin-right: 0.938em;
-  margin-top: 1.625em;
+  margin-top: 0.625em;
   margin-right: -1.625em;
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -257,7 +272,6 @@
 }
 .Checkout .addressTxt {
   float: left;
-  margin-top: 1.563em;
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .Checkout .address-1 {
@@ -332,15 +346,16 @@
   background-color: gainsboro;
   font-size: .813em;
   border-width: 0em;
-  margin-bottom: 0.875em;
+  margin: 0.875em;
   border: none;
   height: 2em;
   font-size: 1em;
-  width: 19em;
+  width: 20em;
 }
 .Checkout .experation {
   float: left;
   padding-right: 1em;
+  padding-left: 1em;
   font-size: 12px;
 }
 .Checkout .month-selector {
@@ -389,15 +404,28 @@
 }
 .Checkout .address-inputDiv1 {
   border: .5px solid darkgrey;
-  width: 23em;
-  padding-bottom: 2em;
+  width: 25.5em;
   align-content: center;
-  padding-left: 3em;
+  padding: 1em;
 }
 .Checkout .payment-methodDiv {
   padding-left: 4em;
+  margin-bottom: 1em;
 }
 .Checkout .experationDiv {
+  width: auto;
   border: .5px solid darkgrey;
-  background-color: grey;
+  background-color: #ddd;
+}
+.Checkout .card-picture {
+  vertical-align: middle;
+  width: 3em;
+  margin: 5px;
+}
+.Checkout .copyright {
+  background-color: #F4F4F4;
+  width: 100%;
+  display: inline-block;
+  margin-top: 8em;
+  padding: 2em;
 }
