@@ -6,12 +6,12 @@
 }
 .Products .productdiv {
   display: inline-block;
-  width: 300px;
+  width: 400px;
   text-align: center;
-  align-content: center;
 }
 .Products .productscontainer {
   margin-left: 0em;
+  align-content: center;
 }
 .Products .productImage {
   width: 100%;
@@ -336,11 +336,12 @@
   border: none;
   height: 2em;
   font-size: 1em;
-  width: 25em;
+  width: 19em;
 }
 .Checkout .experation {
   float: left;
   padding-right: 1em;
+  font-size: 12px;
 }
 .Checkout .month-selector {
   width: 7.625em;
@@ -352,7 +353,7 @@
   margin-bottom: 0.875em;
 }
 .Checkout .year-selector {
-  width: 7.625em;
+  width: 5.625em;
   height: 2.063em;
   background-color: gainsboro;
   font-size: .813em;
@@ -361,7 +362,7 @@
   margin-bottom: 0.875em;
 }
 .Checkout .CSC {
-  width: 7.375em;
+  width: 4.375em;
   height: 2.063em;
   background-color: gainsboro;
   margin-right: .75em;
@@ -385,4 +386,18 @@
   text-align: center;
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
+}
+.Checkout .address-inputDiv1 {
+  border: .5px solid darkgrey;
+  width: 23em;
+  padding-bottom: 2em;
+  align-content: center;
+  padding-left: 3em;
+}
+.Checkout .payment-methodDiv {
+  padding-left: 4em;
+}
+.Checkout .experationDiv {
+  border: .5px solid darkgrey;
+  background-color: grey;
 }
