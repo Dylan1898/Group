@@ -7,6 +7,8 @@
     }
   
     .productdiv {
+        padding: 1em;
+        margin: 2em;
         display: inline-block;
         width: 400px;
         text-align: center;
@@ -33,9 +35,44 @@
     .price {
       color: #47b6c7;
     }
-  }
+}
 
-  .Home{ 
+.Single { 
+    .singleproduct {
+            margin-top: 4em;
+            margin-left: 4em;
+        }
+        
+        .singletext {
+            margin-top: 10em;
+        }
+        
+        .buttonsingle {
+            background-color: #47B6C7;
+            font-size: 1.8em;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            width: 10em;
+            font-variant: all-small-caps;
+            font-family: "Futura";
+            letter-spacing: 3px;
+        }
+        
+        .copyright {
+            background-color: #F4F4F4;
+            width: 100%;
+            display: inline-block;
+            margin-top: 12em;
+            padding: 2em;
+        }
+        
+        .price {
+            color: #47b6c7;
+        }
+    }
+
+.Home{ 
     .homeimage {
       height: 80%;
       width: 100%;
@@ -87,46 +124,10 @@
     }
   }
 
-  .Single { 
-    .singleproduct {
-        margin-top: 4em;
-        margin-left: 4em;
-      }
-    
-      .singletext {
-        margin-top: 10em;
-      }
-    
-      .buttonsingle {
-        background-color: #47B6C7;
-        font-size: 1.8em;
-        color: white;
-        border-radius: 8px;
-        border: none;
-        width: 10em;
-        font-variant: all-small-caps;
-        font-family: "Futura";
-        letter-spacing: 3px;
-      }
-    
-      .copyright {
-        background-color: #F4F4F4;
-        width: 100%;
-        display: inline-block;
-        margin-top: 8em;
-        padding: 2em;
-      }
-    
-      .price {
-        color: #47b6c7;
-      }
-    }
-
 .Index {
     .footer {
-    -webkit-filter: brightness(0.15);
-    filter: brightness(0.15);
-    opacity: 0.3;
+    -webkit-filter: brightness(15%); 
+    filter: brightness(15%);
     width: 30%;
     height: 30%;
     float: left;
@@ -140,14 +141,40 @@
     font-size: 1.4em;
     }
     .header {
-    height: 2.3em;
+    height: 1.5em;
     width: auto;
     }
     .navbar-inverse {
     opacity: 0.66;
-    height: 5em;
     }
-
+  
+    .circle {
+      background: #47B6C7;
+      width: 1.50em;
+      height: 1.50em;
+      border-radius: 50%;
+      float: left;
+      text-align: center;
+      margin-right: .75em;
+      font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: white;
+    }
+    
+    .cartitem{
+        display: inline-flex;
+        .displayimage{
+            margin: 1em;
+            height: 100px;
+            width: 100px;
+        }
+        #delete{
+            background-color: white;
+            color: red;
+            border: none;
+            margin: 3em;
+        }
+    }
+  
     .sidenav {
     float: right;
     height: 93%;
@@ -168,51 +195,82 @@
         display: block;
         transition: 0.3s;
         }
-
+  
         .closebtn {
         background-color: #47B6C7;
         position: absolute;
         top: 0;
         font-size: 16px;
         width: 100%;
+        padding: 1em;
         }
-        .checkoutbtn {
-            background-color: #47B6C7;
-            position: absolute;
-            font-size: 16px;
-            border: none;
-            color: white;
-            margin: 2em;
-            padding-left: 3em;
-            padding-right: 3em;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            }
+  
+        .checkoutbtn{
+        background-color: #47B6C7;
+        color: white;
+        border-width: 0em;
+        border: none;
+        font-size: 24px;
+        width: 15em;
+        height: 2em;
+        font-weight: bold;
+        }
     }
-}   
-
+  }
 .Checkout {
+    .reviewcode {
+        padding: 1em;
+    }
+
+    .reviewcodeapply {
+        background-color: whitesmoke;
+        color: darkgrey;
+        border: none;
+        padding: 1em;
+    }
+
+    .reviewproduct{
+    justify-content: center;
+    align-items: center;
+    background-clip: padding-box;
+    display: flex;
+    }
     .reviewcart{
+        border: #e0e0e0;
+        border-radius: 0.65em;
+        overflow: auto;
+        text-align: center;
         height: 45.25em;
         background-color: #e0e0e0;
         font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
-    .reviewbutton{
+    .reviewremove{
         background-color: white;
-        color:red;
-        border-radius: 0.25em;
+        color: red;
+        border-radius: .65em;
+        border: none;
+        margin: 3em;
+    }
+
+    .reviewbutton{
+        border: 1px grey solid;
+        background-color: white;
+        color: red;
+        border-radius: .65em;
         padding: 1em;
+        margin: 1em;
     }
 
     .reviewimage{
+        margin: 1em;
         height: 100px;
         width: 100px;
     }
 
     .invoice-container{
+        text-align: center;
         padding-left: 2em;
-        border: black solid 2px;
         padding-bottom: 3em;
         padding-top: 2em;
         overflow: scroll
@@ -434,19 +492,18 @@
         height: 2em;
         font-weight: bold;
     }
-    .footer{
+    .footer2{
         text-align: center;
         font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
     }
     .address-inputDiv1 {
         border: .5px solid darkgrey;
-        width: 25.5em;
+        width: 95%;
         align-content: center;
-        padding: 1em;
     }
     .payment-methodDiv{
-        padding-left: 4em;
+        padding-left: 5em;
         margin-bottom: 1em;
         }
     .experationDiv{

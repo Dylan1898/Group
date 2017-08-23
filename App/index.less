@@ -1,8 +1,7 @@
 .Index {
-  footer {
-  -webkit-filter: brightness(0.15);
-  filter: brightness(0.15);
-  opacity: 0.3;
+  .footer {
+  -webkit-filter: brightness(15%); 
+  filter: brightness(15%);
   width: 30%;
   height: 30%;
   float: left;
@@ -11,17 +10,43 @@
   }
   .footertext {
   float: right;
-  margin-top: 2em;
+  margin-top: 0.8em;
   opacity: 0.6;
   font-size: 1.4em;
   }
   .header {
-  height: 2.3em;
+  height: 1.5em;
   width: auto;
   }
   .navbar-inverse {
   opacity: 0.66;
-  height: 5em;
+  }
+
+  .circle {
+    background: #47B6C7;
+    width: 1.50em;
+    height: 1.50em;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    margin-right: .75em;
+    font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+  }
+  
+  .cartitem{
+      display: inline-flex;
+      .displayimage{
+          margin: 1em;
+          height: 100px;
+          width: 100px;
+      }
+      #delete{
+          background-color: white;
+          color: red;
+          border: none;
+          margin: 3em;
+      }
   }
 
   .sidenav {
@@ -45,13 +70,24 @@
       transition: 0.3s;
       }
 
-      .sidenav .closebtn {
+      .closebtn {
       background-color: #47B6C7;
       position: absolute;
       top: 0;
       font-size: 16px;
       width: 100%;
       padding: 1em;
+      }
+
+      .checkoutbtn{
+      background-color: #47B6C7;
+      color: white;
+      border-width: 0em;
+      border: none;
+      font-size: 24px;
+      width: 15em;
+      height: 2em;
+      font-weight: bold;
       }
   }
 }

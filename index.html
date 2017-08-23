@@ -23,8 +23,7 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
+                    <span class="icon-bar"></span>                       
                 </button>
                     <a class="navbar-brand" href="#/home"><img class="header" src="/App/images/Newlogo.png" alt="COVALENCE"></a>
                 </div>
@@ -34,8 +33,8 @@
                         <li><a class="navbuttons" href="#/misc"> MISC </a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="navbuttons" onclick="openNav(); getTotal()"> Cart </a></li>
-                        <li><a onclick="openNav()"> {{theCart.length}}</a></li>
+                        <li><a class="navbuttons" onclick="openNav(); getTotal()"> Cart {{theCart.length}}</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -46,15 +45,17 @@
             <h4 class="navtext">Your Shopping Cart</h4>
             <hr>
             <div ng-controller="CartController">
-                <div ng-repeat="items in theCart track by $index">
-                    <h1>{{items.name}}</h1>
-                    <img ng-src='App/images/{{items.image}}'></img>
-                    <h3>${{items.price| MakeMoney}}.00</h3>
-                    <button id='delete' onclick='removeFromCart()'>Remove from cart</button>
+                <div class="cartitem" ng-repeat="items in theCart track by $index">
+                    <img class="displayimage" ng-src='App/images/{{items.image}}'></img>
+                    <h5>{{items.name}}</h5>
+                    <h4>${{items.price| MakeMoney}}.00</h4>
+                    <button id='delete' onclick='removeFromCart()'>Remove</button>
                 </div>
             </div>
-            <h4 class="navtext">Total Price</h4>
-            <div class="navtext" id="Total">${{total}}</div>
+            <div style="font-family:'Futura', Arial, Helvetica, sans-serif">
+                <h4 class="navtext">Total Price</h4>
+                <h4 class="navtext" id="Total">${{total}}</h4>
+            </div>
             <p class="navtext2">Taxes and Fees included at Checkout</p>
             <a href="#/checkout"><button  class="checkoutbtn">Check Out</button></a>
         </div>

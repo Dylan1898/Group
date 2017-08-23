@@ -106,6 +106,7 @@ StoreApp.controller('SingleCtl', function ($http, $scope, $rootScope, $location,
         localStorage.setItem('cart', JSON.stringify(cart));
         $rootScope.theCart.push(product);
         var y = document.getElementById("Total").innerHTML= (getTotal())
+        
     }
 });
 
@@ -155,6 +156,7 @@ function getTotal() {
     // console.log($rootScope.theCart.total)
     // console.log(sum)
 };
+var z = document.getElementById("Final").innerHTML= (getTotal())
 var y = document.getElementById("Total").innerHTML= (getTotal())
 
 function removeFromCart(target){
@@ -164,3 +166,5 @@ function removeFromCart(target){
     console.log(cart)
     localStorage.setItem('cart', JSON.stringify(cart));
    }
+
+   
