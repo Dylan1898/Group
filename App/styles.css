@@ -64,7 +64,7 @@
 .Home .mug {
   width: 100%;
   height: 100%;
-  margin-top: -15em;
+  margin-top: -10em;
 }
 .Home h4 {
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -494,4 +494,28 @@
   margin-top: 8em;
   padding: 2em;
 }
-
+.Invoice {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #47b6c7;
+  padding-left: 3em;
+  border: 1px solid grey;
+  background-color: grey;
+  color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.Invoice tr:nth-of-type(odd) {
+  background-color: #47b6c7;
+}
+.Invoice table {
+  width: 100%;
+}
+.Invoice tr:nth-of-type(even) {
+  background-color: grey;
+}
+.Invoice .container {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #47b6c7;
+}
