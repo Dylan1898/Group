@@ -6,11 +6,11 @@
 			<img class=reviewimage ng-src="App/images/{{product.image}}" alt="product">
 			<h4 style="width:8em">{{product.name}}</h4>
 			<h4>${{product.price| MakeMoney}}.00</h4>
-			<button class="reviewremove">remove</button>
+			<button class="reviewremove" onclick='removeFromCart()'>remove</button>
 		</div>
 		<h2 class="reviewtitle">Order Summary</h2>
 		<input class="reviewcode" placeholder="Discount Code" type="text"><button class="reviewcodeapply">Apply</button>
-		<h4 >Order Total:</h4> <h4 id="Final">${{total.theCart}}</h4>
+		<h4 >Order Total:</h4> <h4 id="Final">$</h4>
 	</div>
 	<div class="col-xs-12 col-md-6 invoice-container">
 		<div class="email-div">

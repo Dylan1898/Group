@@ -156,9 +156,9 @@ function getTotal() {
     // console.log($rootScope.theCart.total)
     // console.log(sum)
 };
-var z = document.getElementById("Final").innerHTML= (getTotal())
-var y = document.getElementById("Total").innerHTML= (getTotal())
 
+var y = document.getElementById("Total").innerHTML= (getTotal())
+var z = document.getElementById("Final").innerHTML.getElementById("Total")
 function removeFromCart(target){
     var cart = JSON.parse(localStorage.getItem('cart'))
     cart.splice(EventTarget.index, 1)   

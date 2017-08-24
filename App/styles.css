@@ -111,7 +111,7 @@
 }
 .Index .footertext {
   float: right;
-  margin-top: 2em;
+  margin-top: 0.8em;
   opacity: 0.6;
   font-size: 1.4em;
 }
@@ -120,14 +120,27 @@
   width: auto;
 }
 .Index .navbar-inverse {
+  color: #47B6C7;
   opacity: 0.66;
+}
+.Index .navbuttons {
+  padding-top: 19px;
+  color: #47B6C7;
+}
+.Index .navbuttons:active {
+  color: white;
+  text-decoration: underline;
+  border-bottom-width: 3px;
+}
+.Index .navbuttons1 {
+  display: inline-flex;
+  color: #47b6c7;
 }
 .Index .circle {
   background: #47B6C7;
   width: 1.50em;
   height: 1.50em;
   border-radius: 50%;
-  float: left;
   text-align: center;
   margin-right: .75em;
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
