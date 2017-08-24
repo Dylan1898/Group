@@ -124,6 +124,32 @@
   }
 
 .Index {
+    main {
+        padding: 0 20px;
+        min-height: 300px;
+    
+        .products-table {
+            margin-top: 20px;
+            
+            .delete-column {
+                width: 60px;
+            }
+        }
+        /* start 'enter' transition */
+        &.ng-enter {
+            /* transition on enter for .5s */
+            transition: .5s;
+     
+            /* start with opacity 0 (invisible) */
+            opacity: 0;
+        }
+     
+        /* end 'enter' transition */
+        &.ng-enter-active {
+            /* end with opacity 1 (fade in) */
+            opacity: 1;
+        }
+    }
     .footer {
     -webkit-filter: brightness(15%); 
     filter: brightness(15%);
@@ -161,7 +187,7 @@
   
     .navbuttons1{
       display: inline-flex;
-      color: #47b6c7;
+      color: #47B6C7;
     }
   
     .circle {
@@ -170,13 +196,22 @@
       height: 1.50em;
       border-radius: 50%;
       text-align: center;
-      margin-right: .75em;
+      margin-left: .75em;
       font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       color: white;
     }
     
     .cartitem{
         display: inline-flex;
+        .itemname {
+            width: 5em;
+            font-size: 14px;
+        }
+        .itemprice {
+            height: 1em;
+            font-size: 18px;
+            padding: 0.5em;
+        }
         .displayimage{
             margin: 1em;
             height: 100px;
@@ -186,7 +221,8 @@
             background-color: white;
             color: red;
             border: none;
-            margin: 3em;
+            margin: 1em;
+            height: 3em;
         }
     }
   
@@ -245,10 +281,7 @@
     }
 
     .reviewproduct{
-    justify-content: center;
-    align-items: center;
-    background-clip: padding-box;
-    display: flex;
+        display: inline-flex;
     }
     .reviewcart{
         border: #e0e0e0;
@@ -539,7 +572,10 @@
         margin-top: 8em;
         padding: 2em;
       }
-  }
+      .ccbackground{
+        box-shadow: 0px 0px 5px yellow
+      }
+}
 
 .Invoice{
         font-family: "Futura", Arial, Helvetica, sans-serif;

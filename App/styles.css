@@ -100,6 +100,28 @@
   transition: margin-left 0.5s;
   padding: 20px;
 }
+.Index main {
+  padding: 0 20px;
+  min-height: 300px;
+  /* start 'enter' transition */
+  /* end 'enter' transition */
+}
+.Index main .products-table {
+  margin-top: 20px;
+}
+.Index main .products-table .delete-column {
+  width: 60px;
+}
+.Index main.ng-enter {
+  /* transition on enter for .5s */
+  transition: .5s;
+  /* start with opacity 0 (invisible) */
+  opacity: 0;
+}
+.Index main.ng-enter-active {
+  /* end with opacity 1 (fade in) */
+  opacity: 1;
+}
 .Index .footer {
   -webkit-filter: brightness(15%);
   filter: brightness(15%);
@@ -134,7 +156,7 @@
 }
 .Index .navbuttons1 {
   display: inline-flex;
-  color: #47b6c7;
+  color: #47B6C7;
 }
 .Index .circle {
   background: #47B6C7;
@@ -142,12 +164,21 @@
   height: 1.50em;
   border-radius: 50%;
   text-align: center;
-  margin-right: .75em;
+  margin-left: .75em;
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;
 }
 .Index .cartitem {
   display: inline-flex;
+}
+.Index .cartitem .itemname {
+  width: 5em;
+  font-size: 14px;
+}
+.Index .cartitem .itemprice {
+  height: 1em;
+  font-size: 18px;
+  padding: 0.5em;
 }
 .Index .cartitem .displayimage {
   margin: 1em;
@@ -158,7 +189,8 @@
   background-color: white;
   color: red;
   border: none;
-  margin: 3em;
+  margin: 1em;
+  height: 3em;
 }
 .Index .sidenav {
   float: right;
@@ -209,10 +241,7 @@
   padding: 1em;
 }
 .Checkout .reviewproduct {
-  justify-content: center;
-  align-items: center;
-  background-clip: padding-box;
-  display: flex;
+  display: inline-flex;
 }
 .Checkout .reviewcart {
   border: #e0e0e0;
@@ -493,6 +522,9 @@
   display: inline-block;
   margin-top: 8em;
   padding: 2em;
+}
+.Checkout .ccbackground {
+  box-shadow: 0px 0px 5px yellow;
 }
 .Invoice {
   font-family: "Futura", Arial, Helvetica, sans-serif;

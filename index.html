@@ -30,8 +30,8 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a class="navbuttons" href="#/appearl"> APPEARL </a></li>
-                        <li><a class="navbuttons" href="#/misc"> MISC </a></li>
+                        <li><a class="navbuttons" style="color:#47B6C7" href="#/appearl"> APPEARL </a></li>
+                        <li><a class="navbuttons" style="color:#47B6C7" href="#/misc"> MISC </a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="navbuttons1" onclick="openNav(); getTotal()"> Cart <div class="circle">{{theCart.length}}</div></a></li>
@@ -43,13 +43,13 @@
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
-            <h4 class="navtext">Your Shopping Cart</h4>
+            <h4 class="navtext" style="padding:1em">Your Shopping Cart</h4>
             <hr>
             <div ng-controller="CartController">
                 <div class="cartitem" ng-repeat="items in theCart track by $index">
                     <img class="displayimage" ng-src='App/images/{{items.image}}'></img>
-                    <h5>{{items.name}}</h5>
-                    <h4>${{items.price| MakeMoney}}.00</h4>
+                    <h5 class= "itemname">{{items.name}}</h5>
+                    <h4 class= "itemprice" >${{items.price| MakeMoney}}.00</h4>
                     <button id='delete' onclick='removeFromCart()'>Remove</button>
                 </div>
             </div>
