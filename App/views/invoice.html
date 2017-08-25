@@ -1,50 +1,55 @@
-<div ng-controller="InvoiceCtl" class="Invoice"></div>
-<h2>Invoice</h2>
-<table>
-<tr>
-    <td>Name: </td>
-</tr>
-<tr>
-    <td>Address: </td>
-</tr>
-<tr> 
-    <td>Zip: </td>
-</tr>
-<tr>    
-    <td>State: </td>
-</tr>
-<tr>
-    <td>Phone: </td>
-</tr>
-<tr>
-    <td>Date: </td>
-</tr>
-<tr>
-    <td>Invoice #: </td>
-</tr>
-<tr>
-    <td>Customer ID: </td>
-</tr>
-</tr>
-</table>
-
-<div class="container">
-    <div class="table-responsive">
-        <table class="table">   
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Description</th>
-                    <th>Cost</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="success">
-                    <td>0</td>
-                    <td>Product</td>
-                    <td>15.00</td>
-                </tr>
-            </tbody>
+<div ng-controller="InvoiceCtl" class="Invoice">
+        
+        <div ng-repeat="data in invoices">
+                <h2 >Invoice</h2>
+        <table>
+        <!-- <tr>
+            <td>Name: </td>
+        </tr>
+        <tr>
+            <td>Address: </td>
+        </tr>
+        <tr> 
+            <td>Zip: </td>
+        </tr>
+        <tr>    
+            <td>State: </td>
+        </tr>
+        <tr>
+            <td>Phone: </td>
+        </tr> -->
+        <tr>
+                <td>Invoice #: {{data.id}} </td>
+            
+        </tr>
+        <tr>
+                <td>Date: {{data.date| date:'shortDate'}}</td>
+        </tr>
+        <tr>
+            <td>Total: ${{data.price}}.00 </td>
+        </tr>
+        </tr>
         </table>
-    </div>
-</div>
+        </div>
+        </div>     
+        <!-- <div class="container">
+            <div class="table-responsive">
+                <table class="table">   
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Description</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="success">
+                            <td>0</td>
+                            <td>Product</td>
+                            <td>15.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> -->
+        

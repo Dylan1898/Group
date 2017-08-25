@@ -1,4 +1,4 @@
-<div class="Checkout">
+<div class="Checkout" >
     <div class="col-xs-12 col-md-7 invoice-container">
         <div class="email-div">
             <div class="circle1">1</div>
@@ -341,14 +341,14 @@
                     <div class="address-inputDiv1">
                         <div class="experationDiv">
                             <input type="checkbox" name="card" value="card">
-                            <img class="card-picture" ng-src="./App/images/visa.png">
-                            <img class="card-picture" ng-src="./App/images/discover.png">
-                            <img class="card-picture" ng-src="./App/images/mastercard.png">
-                            <img class="card-picture" ng-src="./App/images/american-express.png"><br>
+                            <img id='visa' class="card-picture" ng-src="./App/images/visa.png">
+                            <img id='discover' class="card-picture" ng-src="./App/images/discover.png">
+                            <img id='mastercard' class="card-picture" ng-src="./App/images/mastercard.png">
+                            <img id='amex' class="card-picture" ng-src="./App/images/american-express.png"><br>
                         </div>
-                        <input class="card-number" value="" placeholder="Card #"></input>
+                        <input class="card-number" value="" placeholder="Card #" id='cc' class='cc' ng-model="val" > 
                         <br>
-                        <select class="month-selector">
+                        <select id='exp' class="month-selector">
                             <option value="Month">Month</option>
                             <option value="January">January</option>
                             <option value="Feburary">Feburary</option>
@@ -388,14 +388,14 @@
                 </div>
             </div>
         </div>
-        <div class="footer2">
+        <div class="footer2" ng-controller="CheckOut">
             <p class="footer-text">Almost done! Click the submit button to process your payment.</p>
-            <a href="#/invoice"><button class="submit-button">Submit Your Order</button></a>
+            <a href="#/invoice"><button class="submit-button" onclick="insertdata(), clearCart()">Submit Your Order</button></a>
         </div>
     </div>
     <div class="col-xs-12 col-md-5 reviewcart">
         <h2 class="reviewtitle" >Your Shopping Cart</h2>
-        <a href="#/appearl"><button class="reviewbutton">|Cancel and continue shopping|</button></a>
+        <a href="#/apparel"><button class="reviewbutton">|Cancel and continue shopping|</button></a>
         <div class="reviewproduct" ng-repeat="product in theCart">
             <img class=reviewimage ng-src="App/images/{{product.image}}" alt="product">
             <h4 style="width:8em">{{product.name}}</h4>
@@ -404,7 +404,7 @@
         </div>
         <h2 class="reviewtitle">Order Summary</h2>
         <input class="reviewcode" placeholder="Discount Code" type="text"><button class="reviewcodeapply">Apply</button>
-        <h4 >Order Total:</h4> <h4 id="Final">$</h4>
+        <h4 >Order Total:</h4> <h4 id="Final">$32</h4>
     </div>
 </div>
 <div>
