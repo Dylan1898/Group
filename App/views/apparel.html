@@ -1,0 +1,16 @@
+<div class= "Products">
+    <div class="banner"><img class="bannerImage" src="/App/images/covalence-store-apparel-hero.jpg" alt="clothesrack"></div>
+    <div ng-controller="apparelCtl" class='productscontainer'>
+        <div class="col-xs-12 col-md-4 col-lg-3 productdiv" ng-repeat="apparel in data">
+            <div ng-click="getId(apparel.id)">
+                <img class="productImage"  ng-src="App/images/{{apparel.image}}" alt="Product"> 
+                <h4 class="productName" >{{apparel.name}}</h4>
+                <h4 class="price" >${{apparel.price| MakeMoney}}.00</h4>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="copyright"><img class= "footer"src="/App/images/Newlogo.png" alt="COVALENCE"><h4 class="footertext">Copyright Covalence LLC</h4></div>
+    </div>
+</div>

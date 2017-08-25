@@ -1,27 +1,29 @@
 .Products{ 
     .bannerImage {
-        margin-top: -10em;
-        margin-bottom: 25px;
-        width: 100%;
-        height: auto;
+      margin-top: -6em;
+      margin-bottom: 25px;
+      width: 100%;
+      height: 25em;
+    }
+    .price {
+      float: right;
+      color: #47b6c7;
+      margin-right: -3em;
+      font-family: "Futura";
     }
   
     .productdiv {
-        padding: 1em;
-        margin: 2em;
-        display: inline-block;
-        width: 400px;
-        text-align: center;
-      }
+      margin: 1.7em;
+      padding: 1em;
+      display: inline-block;
+      width: 400px;
+      text-align: center;
+    }
   
     .productscontainer {
-      margin-left: 0em;
-      align-content: center;
-    }
-    
-    .productImage {
-      width: 100%;
-      height: 100%;
+      text-align:center;
+      display:inline-block;
+      width:100%;
     }
   
     .copyright {
@@ -31,186 +33,190 @@
       margin-top: 8em;
       padding: 2em;
     }
-  
-    .price {
-      color: #47b6c7;
+    .productName {
+      color: #6b6b6b;
+      font-size: 18px;
+      float: left;
+      margin-left: 3.4em;
+      font-family: "Futura";
     }
+    .productImage {
+      margin-left: 4.3em;
+      width: 100%;
+      height: 100%;
+    }
+    
   }
 .Single { 
     .singleproduct {
-            margin-top: 4em;
-            margin-left: 4em;
-        }
-        
-        .singletext {
-            margin-top: 10em;
-        }
-        
-        .buttonsingle {
-            background-color: #47B6C7;
-            font-size: 1.8em;
-            color: white;
-            border-radius: 8px;
-            border: none;
-            width: 10em;
-            font-variant: all-small-caps;
-            font-family: "Futura";
-            letter-spacing: 3px;
-        }
-        
-        .copyright {
-            background-color: #F4F4F4;
-            width: 100%;
-            display: inline-block;
-            margin-top: 12em;
-            padding: 2em;
-        }
-        
-        .price {
-            color: #47b6c7;
-        }
-    }
-
-.Home{ 
-    .homeimage {
-      height: 80%;
-      width: 100%;
-    }
-    .mug {
-      width: 100%;
-      height: 100%;
-      margin-top: -10em;
-    }
+        margin-top: 4em;
+        margin-left: 4em;
+      }
   
+      .singletext {
+        margin-top: 10em;
+        font-family: "Futura";
+      }
   
-    h4 {
-      font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-  
-    .start-shopping {
-      z-index: 2;
-      width: 300px;
-      height: 150;
-    }
-    .Welcome {
-      left: 15%;
-      bottom: 40%;
-      width: 50%;
-      position: sticky;
-  
-        .billboard {
-        color: whitesmoke;
-        Font-family: "Futura";
-        width: 50%;
-        font-size: 30px;
-        }
-  
-        .start-shopping {
-        width: 50%;
+      .buttonsingle {
         background-color: #47B6C7;
-        border: none;
-        border-radius: 0.125em;
+        font-size: 1.8em;
         color: white;
-        font-family: futura;
-        font-size: 20px;
-        padding: 19px;
-        }
-    }
+        border-radius: 8px;
+        border: none;
+        width: 10em;
+        font-variant: all-small-caps;
+        font-family: "Futura";
+        letter-spacing: 3px;
+      }
   
-    #main {
-      transition: margin-left 0.5s;
-      padding: 20px;
+      .copyright {
+        background-color: #F4F4F4;
+        width: 100%;
+        display: inline-block;
+        margin-top: 12em;
+        padding: 2em;
+        font-family: "Futura";
+      }
+  
+      .price {
+        color: #47b6c7;
+        font-family: "Futura";
+      }
     }
-  }
-
-.Index {
-    main {
-        padding: 0 20px;
-        min-height: 300px;
-    
-        .products-table {
-            margin-top: 20px;
-            
-            .delete-column {
-                width: 60px;
+.Home{ 
+        .homeimage {
+          height: 80%;
+          width: 100%;
+        }
+        .mug {
+          width: 100%;
+          height: 100%;
+          margin-top: -15em;
+        }
+      
+      
+        h4 {
+          font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+      
+        .start-shopping {
+          z-index: 2;
+          width: 300px;
+          height: 150;
+        }
+        .Welcome {
+          left: 15%;
+          bottom: 40%;
+          width: 50%;
+          position: sticky;
+      
+            .billboard {
+            color: whitesmoke;
+            Font-family: "Futura";
+            width: 50%;
+            font-size: 50px;
+            }
+      
+            .start-shopping {
+            width: 50%;
+            background-color: #47B6C7;
+            border: none;
+            border-radius: 0.125em;
+            color: white;
+            font-family: "futura";
+            font-size: 20px;
+            padding: 19px;
             }
         }
-        /* start 'enter' transition */
-        &.ng-enter {
-            /* transition on enter for .5s */
-            transition: .5s;
-     
-            /* start with opacity 0 (invisible) */
-            opacity: 0;
+      
+        #main {
+          transition: margin-left 0.5s;
+          padding: 20px;
         }
-     
-        /* end 'enter' transition */
-        &.ng-enter-active {
-            /* end with opacity 1 (fade in) */
-            opacity: 1;
-        }
-    }
+      }
+.Index {
     .footer {
-    -webkit-filter: brightness(15%); 
-    filter: brightness(15%);
-    width: 30%;
-    height: 30%;
-    float: left;
-    height: 3.55em;
-    width: auto;
+        -webkit-filter: brightness(15%); 
+    filter: brightness(75%);
+        width: 30%;
+        height: 30%;
+        float: left;
+        height: 3.55em;
+        width: auto;
     }
     .footertext {
-    float: right;
-    margin-top: 0.8em;
-    opacity: 0.6;
-    font-size: 1.4em;
+        float: right;
+        margin-top: 0.8em;
+        opacity: 0.3;
+        font-size: 1.4em;
+        font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .header {
-    height: 1.5em;
-    width: auto;
+        height: 1.5em;
+        width: auto;
     }
     .navbar-inverse {
-      color: #47B6C7;
-      opacity: 0.66;
+        color: #47B6C7;
+        opacity: 0.66;
+        font-family: "Futura";
     }
-  
+    
     .navbuttons{
-      padding-top: 19px;
-      color: #47B6C7;
+        padding-top: 19px;
+        color: #47B6C7;
+        font-family: "Futura";
     }
-  
+    
     .navbuttons:active {
         color: white;
         text-decoration: underline;
         border-bottom-width: 3px; 
     }
-  
-    .navbuttons1{
-      display: inline-flex;
-      color: #47B6C7;
+    .navtext {
+        font-size: 18px;
+        float: left;
+        margin-left: 1em;
     }
-  
+
+    .navprice {
+        font-size: 18px;
+        float: left;
+        margin-left: 11em;
+        font-family: "Futura";
+    }
+    
+    .navbuttons1{
+        display: inline-flex;
+        color: #47B6C7;
+        font-family: "Futura";
+    }
+    
     .circle {
-      background: #47B6C7;
-      width: 1.50em;
-      height: 1.50em;
-      border-radius: 50%;
-      text-align: center;
-      margin-left: .75em;
-      font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      color: white;
+        background: #47B6C7;
+        width: 1.50em;
+        height: 1.50em;
+        border-radius: 50%;
+        text-align: center;
+        margin-left: .75em;
+        font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
     }
     
     .cartitem{
         display: inline-flex;
         .itemname {
+            float: left;
             width: 5em;
             font-size: 14px;
         }
         .itemprice {
+            margin: 0em;
+            float: right;
             height: 1em;
             font-size: 18px;
             padding: 0.5em;
+            font-family: "Futura";
         }
         .displayimage{
             margin: 1em;
@@ -225,50 +231,58 @@
             height: 3em;
         }
     }
-  
+    
     .sidenav {
-    float: right;
-    height: 93%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-    background-color: whitesmoke;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+        float: right;
+        height: 93%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
         .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: white;
-        display: block;
-        transition: 0.3s;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
         }
-  
+
+        p {
+            color: #b7b7b7;
+            margin-left: 4.5em;
+            margin-top: 5em;
+        }
+    
         .closebtn {
-        background-color: #47B6C7;
-        position: absolute;
-        top: 0;
-        font-size: 16px;
-        width: 100%;
-        padding: 1em;
+            background-color: #47B6C7;
+            position: absolute;
+            top: 0;
+            font-size: 16px;
+            width: 100%;
+            padding: 1em;
         }
-  
+    
         .checkoutbtn{
-        background-color: #47B6C7;
-        color: white;
-        border-width: 0em;
-        border: none;
-        font-size: 24px;
-        width: 15em;
-        height: 2em;
-        font-weight: bold;
+            background-color: #47B6C7;
+            color: white;
+            border-width: 0em;
+            border: none;
+            font-size: 24px;
+            width: 75%;
+            height: 2em;
+            font-weight: bold;
+            margin-left: 2em;
         }
     }
-  }
+}
 .Checkout {
+    margin: 4em;
     .reviewcode {
         padding: 1em;
     }
@@ -281,7 +295,10 @@
     }
 
     .reviewproduct{
-        display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-clip: padding-box;
+    display: flex;
     }
     .reviewcart{
         border: #e0e0e0;
@@ -576,7 +593,6 @@
         box-shadow: 0px 0px 5px yellow
       }
 }
-
 .Invoice{
         font-family: "Futura", Arial, Helvetica, sans-serif;
         font-size: 24px;

@@ -1,57 +1,34 @@
 .Index {
-    main {
-        padding: 0 20px;
-        min-height: 300px;
-    
-        .products-table {
-            margin-top: 20px;
-            
-            .delete-column {
-                width: 60px;
-            }
-        }
-        /* start 'enter' transition */
-        &.ng-enter {
-            /* transition on enter for .5s */
-            transition: .5s;
-     
-            /* start with opacity 0 (invisible) */
-            opacity: 0;
-        }
-     
-        /* end 'enter' transition */
-        &.ng-enter-active {
-            /* end with opacity 1 (fade in) */
-            opacity: 1;
-        }
-    }
     .footer {
-    -webkit-filter: brightness(15%); 
-    filter: brightness(15%);
-    width: 30%;
-    height: 30%;
-    float: left;
-    height: 3.55em;
-    width: auto;
+        -webkit-filter: brightness(15%); 
+    filter: brightness(75%);
+        width: 30%;
+        height: 30%;
+        float: left;
+        height: 3.55em;
+        width: auto;
     }
     .footertext {
-    float: right;
-    margin-top: 0.8em;
-    opacity: 0.6;
-    font-size: 1.4em;
+        float: right;
+        margin-top: 0.8em;
+        opacity: 0.3;
+        font-size: 1.4em;
+        font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .header {
-    height: 1.5em;
-    width: auto;
+        height: 1.5em;
+        width: auto;
     }
     .navbar-inverse {
-      color: #47B6C7;
-      opacity: 0.66;
+        color: #47B6C7;
+        opacity: 0.66;
+        font-family: "Futura";
     }
   
     .navbuttons{
-      padding-top: 19px;
-      color: #47B6C7;
+        padding-top: 19px;
+        color: #47B6C7;
+        font-family: "Futura";
     }
   
     .navbuttons:active {
@@ -59,33 +36,50 @@
         text-decoration: underline;
         border-bottom-width: 3px; 
     }
+    .navtext {
+        font-size: 18px;
+        float: left;
+        margin-left: 1em;
+    }
+
+    .navprice {
+        font-size: 18px;
+        float: left;
+        margin-left: 11em;
+        font-family: "Futura";
+    }
   
     .navbuttons1{
-      display: inline-flex;
-      color: #47B6C7;
+        display: inline-flex;
+        color: #47B6C7;
+        font-family: "Futura";
     }
   
     .circle {
-      background: #47B6C7;
-      width: 1.50em;
-      height: 1.50em;
-      border-radius: 50%;
-      text-align: center;
-      margin-left: .75em;
-      font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      color: white;
+        background: #47B6C7;
+        width: 1.50em;
+        height: 1.50em;
+        border-radius: 50%;
+        text-align: center;
+        margin-left: .75em;
+        font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
     }
     
     .cartitem{
         display: inline-flex;
         .itemname {
+            float: left;
             width: 5em;
             font-size: 14px;
         }
         .itemprice {
+            margin: 0em;
+            float: right;
             height: 1em;
             font-size: 18px;
             padding: 0.5em;
+            font-family: "Futura";
         }
         .displayimage{
             margin: 1em;
@@ -102,44 +96,51 @@
     }
   
     .sidenav {
-    float: right;
-    height: 93%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-    background-color: whitesmoke;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+        float: right;
+        height: 93%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
         .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: white;
-        display: block;
-        transition: 0.3s;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        p {
+            color: #b7b7b7;
+            margin-left: 4.5em;
+            margin-top: 5em;
         }
   
         .closebtn {
-        background-color: #47B6C7;
-        position: absolute;
-        top: 0;
-        font-size: 16px;
-        width: 100%;
-        padding: 1em;
+            background-color: #47B6C7;
+            position: absolute;
+            top: 0;
+            font-size: 16px;
+            width: 100%;
+            padding: 1em;
         }
   
         .checkoutbtn{
-        background-color: #47B6C7;
-        color: white;
-        border-width: 0em;
-        border: none;
-        font-size: 24px;
-        width: 15em;
-        height: 2em;
-        font-weight: bold;
+            background-color: #47B6C7;
+            color: white;
+            border-width: 0em;
+            border: none;
+            font-size: 24px;
+            width: 75%;
+            height: 2em;
+            font-weight: bold;
+            margin-left: 2em;
         }
     }
-  }
+}

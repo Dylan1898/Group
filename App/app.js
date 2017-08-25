@@ -151,13 +151,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // console.log(sum)
     }
     var USD = '$'
-    var End = '.00'
     var Sum2 = sum.toString()
     var Sum3 = Sum2.slice(0, -2)
     // return USD
     arr.push(USD)
     arr.push(Sum3)
-    arr.push(End)
     var x = arr.join('')
     return x
     arr = []

@@ -1,23 +1,26 @@
 .Products .bannerImage {
-  margin-top: -10em;
+  margin-top: -6em;
   margin-bottom: 25px;
   width: 100%;
-  height: auto;
+  height: 25em;
+}
+.Products .price {
+  float: right;
+  color: #47b6c7;
+  margin-right: -3em;
+  font-family: "Futura";
 }
 .Products .productdiv {
+  margin: 1.7em;
   padding: 1em;
-  margin: 2em;
   display: inline-block;
   width: 400px;
   text-align: center;
 }
 .Products .productscontainer {
-  margin-left: 0em;
-  align-content: center;
-}
-.Products .productImage {
+  text-align: center;
+  display: inline-block;
   width: 100%;
-  height: 100%;
 }
 .Products .copyright {
   background-color: #F4F4F4;
@@ -26,8 +29,17 @@
   margin-top: 8em;
   padding: 2em;
 }
-.Products .price {
-  color: #47b6c7;
+.Products .productName {
+  color: #6b6b6b;
+  font-size: 18px;
+  float: left;
+  margin-left: 3.4em;
+  font-family: "Futura";
+}
+.Products .productImage {
+  margin-left: 4.3em;
+  width: 100%;
+  height: 100%;
 }
 .Single .singleproduct {
   margin-top: 4em;
@@ -35,6 +47,7 @@
 }
 .Single .singletext {
   margin-top: 10em;
+  font-family: "Futura";
 }
 .Single .buttonsingle {
   background-color: #47B6C7;
@@ -53,9 +66,11 @@
   display: inline-block;
   margin-top: 12em;
   padding: 2em;
+  font-family: "Futura";
 }
 .Single .price {
   color: #47b6c7;
+  font-family: "Futura";
 }
 .Home .homeimage {
   height: 80%;
@@ -64,7 +79,7 @@
 .Home .mug {
   width: 100%;
   height: 100%;
-  margin-top: -10em;
+  margin-top: -15em;
 }
 .Home h4 {
   font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -84,7 +99,7 @@
   color: whitesmoke;
   Font-family: "Futura";
   width: 50%;
-  font-size: 30px;
+  font-size: 50px;
 }
 .Home .Welcome .start-shopping {
   width: 50%;
@@ -92,7 +107,7 @@
   border: none;
   border-radius: 0.125em;
   color: white;
-  font-family: futura;
+  font-family: "futura";
   font-size: 20px;
   padding: 19px;
 }
@@ -100,31 +115,9 @@
   transition: margin-left 0.5s;
   padding: 20px;
 }
-.Index main {
-  padding: 0 20px;
-  min-height: 300px;
-  /* start 'enter' transition */
-  /* end 'enter' transition */
-}
-.Index main .products-table {
-  margin-top: 20px;
-}
-.Index main .products-table .delete-column {
-  width: 60px;
-}
-.Index main.ng-enter {
-  /* transition on enter for .5s */
-  transition: .5s;
-  /* start with opacity 0 (invisible) */
-  opacity: 0;
-}
-.Index main.ng-enter-active {
-  /* end with opacity 1 (fade in) */
-  opacity: 1;
-}
 .Index .footer {
   -webkit-filter: brightness(15%);
-  filter: brightness(15%);
+  filter: brightness(75%);
   width: 30%;
   height: 30%;
   float: left;
@@ -134,8 +127,9 @@
 .Index .footertext {
   float: right;
   margin-top: 0.8em;
-  opacity: 0.6;
+  opacity: 0.3;
   font-size: 1.4em;
+  font-family: "Futura", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .Index .header {
   height: 1.5em;
@@ -144,19 +138,33 @@
 .Index .navbar-inverse {
   color: #47B6C7;
   opacity: 0.66;
+  font-family: "Futura";
 }
 .Index .navbuttons {
   padding-top: 19px;
   color: #47B6C7;
+  font-family: "Futura";
 }
 .Index .navbuttons:active {
   color: white;
   text-decoration: underline;
   border-bottom-width: 3px;
 }
+.Index .navtext {
+  font-size: 18px;
+  float: left;
+  margin-left: 1em;
+}
+.Index .navprice {
+  font-size: 18px;
+  float: left;
+  margin-left: 11em;
+  font-family: "Futura";
+}
 .Index .navbuttons1 {
   display: inline-flex;
   color: #47B6C7;
+  font-family: "Futura";
 }
 .Index .circle {
   background: #47B6C7;
@@ -172,13 +180,17 @@
   display: inline-flex;
 }
 .Index .cartitem .itemname {
+  float: left;
   width: 5em;
   font-size: 14px;
 }
 .Index .cartitem .itemprice {
+  margin: 0em;
+  float: right;
   height: 1em;
   font-size: 18px;
   padding: 0.5em;
+  font-family: "Futura";
 }
 .Index .cartitem .displayimage {
   margin: 1em;
@@ -213,6 +225,11 @@
   display: block;
   transition: 0.3s;
 }
+.Index .sidenav p {
+  color: #b7b7b7;
+  margin-left: 4.5em;
+  margin-top: 5em;
+}
 .Index .sidenav .closebtn {
   background-color: #47B6C7;
   position: absolute;
@@ -227,9 +244,13 @@
   border-width: 0em;
   border: none;
   font-size: 24px;
-  width: 15em;
+  width: 75%;
   height: 2em;
   font-weight: bold;
+  margin-left: 2em;
+}
+.Checkout {
+  margin: 4em;
 }
 .Checkout .reviewcode {
   padding: 1em;
@@ -241,7 +262,10 @@
   padding: 1em;
 }
 .Checkout .reviewproduct {
-  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: padding-box;
+  display: flex;
 }
 .Checkout .reviewcart {
   border: #e0e0e0;

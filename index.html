@@ -30,7 +30,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a class="navbuttons" style="color:#47B6C7" href="#/appearl"> APPEARL </a></li>
+                        <li><a class="navbuttons" style="color:#47B6C7" href="#/apparel"> APPAREL </a></li>
                         <li><a class="navbuttons" style="color:#47B6C7" href="#/misc"> MISC </a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -49,13 +49,14 @@
                 <div class="cartitem" ng-repeat="items in theCart track by $index">
                     <img class="displayimage" ng-src='App/images/{{items.image}}'></img>
                     <h5 class= "itemname">{{items.name}}</h5>
-                    <h4 class= "itemprice" >${{items.price| MakeMoney}}.00</h4>
+                    <h4 class= "itemprice" >${{items.price| MakeMoney}}</h4>
                     <button id='delete' onclick='removeFromCart()'>Remove</button>
                 </div>
             </div>
+            <br>
             <div style="font-family:'Futura', Arial, Helvetica, sans-serif">
                 <h4 class="navtext">Total Price</h4>
-                <h4 class="navtext" id="Total">${{total}}</h4>
+                <h4 class="navprice" id="Total">${{total}}</h4>
             </div>
             <p class="navtext2">Taxes and Fees included at Checkout</p>
             <a href="#/checkout"><button  class="checkoutbtn">Check Out</button></a>
