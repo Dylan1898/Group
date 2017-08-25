@@ -50,7 +50,7 @@
                     <img class="displayimage" ng-src='App/images/{{items.image}}'></img>
                     <h5 class= "itemname">{{items.name}}</h5>
                     <h4 class= "itemprice" >${{items.price| MakeMoney}}</h4>
-                    <button id='delete' onclick='removeFromCart()'>Remove</button>
+                    <button id='delete' ng-click='removeFromCart(items)'>Remove</button>
                 </div>
             </div>
             <br>
@@ -59,7 +59,7 @@
                 <h4 class="navprice" id="Total">${{total}}</h4>
             </div>
             <p class="navtext2">Taxes and Fees included at Checkout</p>
-            <a href="#/checkout"><button  class="checkoutbtn">Check Out</button></a>
+            <a href="#/checkout" ><button  class="checkoutbtn" onclick=' closeNav()'>Check Out</button></a>
         </div>
         <div ng-view></div>
 
