@@ -7,6 +7,9 @@ var cart = {};
 var StoreApp = angular.module("StoreApp", ['ngRoute'])
     .config(function ($routeProvider) {
         $routeProvider
+            .when("/",{
+                templateUrl:"/App/views/home.html"
+            })
             .when("/home", {
                 templateUrl: "/App/views/home.html"
             })
